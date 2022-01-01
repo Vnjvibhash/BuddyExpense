@@ -53,4 +53,3 @@ firebase.json
 /lib/models/
 /lib/pages/tabs/
 /lib/pages/views/
-/lib/widgets/bottom_nav.dart
