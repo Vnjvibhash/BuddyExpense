@@ -51,6 +51,8 @@ firebase.json
 /macos/Runner/GoogleService-Info.plist
 
 /lib/models/
-/lib/pages/tabs/
+/lib/pages/tabs/groups_page.dart';
+/lib/pages/tabs/activity_page.dart';
+/lib/pages/tabs/settings_page.dart'
 
 
