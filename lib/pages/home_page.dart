@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    final state = context.watch<AppState>();
+    context.watch<AppState>();
     final cs = Theme.of(context).colorScheme;
 
     return ChangeNotifierProvider.value(
