@@ -34,7 +34,6 @@ class _LoginScreenState extends State<LoginScreen>
   bool _isOtpSent = false;
   bool _useEmailLogin = false;
   String _verificationId = '';
-  String? _errorMessage;
 
   @override
   void initState() {
@@ -85,7 +84,6 @@ class _LoginScreenState extends State<LoginScreen>
 
   void _showError(String message) {
     setState(() {
-      _errorMessage = message;
       _isLoading = false;
     });
     ScaffoldMessenger.of(context).showSnackBar(
@@ -105,7 +103,6 @@ class _LoginScreenState extends State<LoginScreen>
     }
     setState(() {
       _isLoading = true;
-      _errorMessage = null;
     });
     String phoneNumber = _phoneController.text.trim();
     if (!phoneNumber.startsWith('+')) phoneNumber = '+91$phoneNumber';
@@ -152,7 +149,6 @@ class _LoginScreenState extends State<LoginScreen>
     }
     setState(() {
       _isLoading = true;
-      _errorMessage = null;
     });
     FocusScope.of(context).unfocus();
     final authService = Provider.of<AuthService>(context, listen: false);
