@@ -31,7 +31,6 @@ class _RegisterScreenState extends State<RegisterScreen>
   String _gender = 'Male';
 
   bool _isLoading = false;
-  String? _errorMessage;
 
   @override
   void initState() {
@@ -64,7 +63,6 @@ class _RegisterScreenState extends State<RegisterScreen>
 
   void _showError(String message) {
     setState(() {
-      _errorMessage = message;
       _isLoading = false;
     });
     ScaffoldMessenger.of(context).showSnackBar(
@@ -86,7 +84,6 @@ class _RegisterScreenState extends State<RegisterScreen>
 
     setState(() {
       _isLoading = true;
-      _errorMessage = null;
     });
 
     try {
