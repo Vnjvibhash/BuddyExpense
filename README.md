@@ -1,8 +1,10 @@
 # BuddyExpense
 
-Seamlessly manage shared expenses and settle up with friends through **BuddyExpense**, your smart solution for hassle-free group finance.
+<p align="center">
+  <img src="assets/images/logo.png?raw=true" alt="iDVault Logo" height="400"/>
+</p>
 
-![BuddyExpense Logo](assets/images/logo.png)
+Seamlessly manage shared expenses and settle up with friends through **BuddyExpense**, your smart solution for hassle-free group finance.
 
 ---
 
